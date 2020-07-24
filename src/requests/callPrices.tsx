@@ -14,7 +14,9 @@ export async function addCallPriceAPI(
   newData: ICallPrice
 ): Promise<AxiosResponse<ICallPrice>> {
   try {
-    return await api.post("/call_prices", newData);
+    let teste = await api.post("/call_prices", newData);
+    debugger;
+    return teste;
   } catch (error) {
     throw error;
   }

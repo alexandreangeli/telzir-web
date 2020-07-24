@@ -1,0 +1,31 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 100vh;
+}
+
+.MTableToolbar-title-9 {
+  overflow: unset !important;
+}
+
+.MuiIcon-root,
+.MuiInputBase-root {
+  color: var(--c-2) !important;
+}
+
+.MuiInput-input {
+  color: var(--c-3) !important;
+}
+
+.MuiFormHelperText-root {
+  color: var(--c-2) !important;
+}
+
+.Mui-error {
+  color: var(--c-5) !important;
+}
+
+.MuiTypography-root {
+  color: var(--c-3) !important;
+}
