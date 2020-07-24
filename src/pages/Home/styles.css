@@ -29,3 +29,7 @@
 .MuiTypography-root {
   color: var(--c-3) !important;
 }
+
+.MuiTableCell-root {
+  color: var(--c-3) !important;
+}
