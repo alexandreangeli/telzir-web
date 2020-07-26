@@ -112,7 +112,9 @@ export default function Home() {
 
   return (
     <div className="default-page home-page">
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      <div
+        style={{ display: "flex", maxHeight: "20vh", justifyContent: "center" }}
+      >
         <img
           alt="Telzir Logo"
           src={require("../../assets/logo-horizontal.png")}
@@ -128,7 +130,8 @@ export default function Home() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <MaterialTable
           style={{
-            maxWidth: 1200,
+            width: "100%",
+            maxWidth: 800,
             backgroundColor: "var(--mediumBlue)",
             color: "var(--white)",
             border: "1px solid var(--white)",
@@ -146,7 +149,7 @@ export default function Home() {
               color: "var(--white)",
               border: "1px solid var(--white)",
             },
-            maxBodyHeight: "75vh",
+            maxBodyHeight: "60vh",
             paging: false,
             sorting: true,
           }}
