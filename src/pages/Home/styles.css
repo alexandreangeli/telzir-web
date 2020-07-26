@@ -5,7 +5,8 @@
   max-height: 100vh;
 }
 
-.MTableToolbar-title-9 {
+.MTableToolbar-title-9,
+.MuiToolbar-root:first-child {
   overflow: unset !important;
 }
 
