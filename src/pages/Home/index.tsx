@@ -114,6 +114,7 @@ export default function Home() {
     <div className="default-page home-page">
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img
+          alt="Telzir Logo"
           src={require("../../assets/logo-horizontal.png")}
           style={{
             margin: 20,
