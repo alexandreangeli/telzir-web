@@ -125,61 +125,64 @@ export default function Home() {
         ></img>
       </div>
 
-      <MaterialTable
-        style={{
-          backgroundColor: "var(--mediumBlue)",
-          color: "var(--white)",
-          border: "1px solid var(--white)",
-        }}
-        title={
-          windowSizeContextValue.width >= 800
-            ? "Telzir - Tabela de preços de ligações"
-            : "Telzir"
-        }
-        columns={columns}
-        data={callPrices}
-        options={{
-          headerStyle: {
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <MaterialTable
+          style={{
+            maxWidth: 1200,
             backgroundColor: "var(--mediumBlue)",
             color: "var(--white)",
             border: "1px solid var(--white)",
-          },
-          maxBodyHeight: "75vh",
-          paging: false,
-          sorting: true,
-        }}
-        editable={{
-          onRowAdd: (newData) =>
-            addCallPriceAPI(newData).then(() => getCallPrices()),
-          onRowUpdate: (newData, oldData) =>
-            updateCallPriceAPI(newData).then(() => getCallPrices()),
-          onRowDelete: (oldData) =>
-            removeCallPriceAPI(oldData).then(() => getCallPrices()),
-        }}
-        localization={{
-          body: {
-            emptyDataSourceMessage: "Nenhum registro para exibir",
-            addTooltip: "Adicionar",
-            deleteTooltip: "Excluir",
-            editTooltip: "Editar",
-            filterRow: {
-              filterTooltip: "Filtro",
+          }}
+          title={
+            windowSizeContextValue.width >= 800
+              ? "Telzir - Tabela de preços de ligações"
+              : "Telzir"
+          }
+          columns={columns}
+          data={callPrices}
+          options={{
+            headerStyle: {
+              backgroundColor: "var(--mediumBlue)",
+              color: "var(--white)",
+              border: "1px solid var(--white)",
             },
-            editRow: {
-              deleteText: "Tem certeza que deseja excluir esse registro?",
-              cancelTooltip: "Cancelar",
-              saveTooltip: "Confirmar",
+            maxBodyHeight: "75vh",
+            paging: false,
+            sorting: true,
+          }}
+          editable={{
+            onRowAdd: (newData) =>
+              addCallPriceAPI(newData).then(() => getCallPrices()),
+            onRowUpdate: (newData, oldData) =>
+              updateCallPriceAPI(newData).then(() => getCallPrices()),
+            onRowDelete: (oldData) =>
+              removeCallPriceAPI(oldData).then(() => getCallPrices()),
+          }}
+          localization={{
+            body: {
+              emptyDataSourceMessage: "Nenhum registro para exibir",
+              addTooltip: "Adicionar",
+              deleteTooltip: "Excluir",
+              editTooltip: "Editar",
+              filterRow: {
+                filterTooltip: "Filtro",
+              },
+              editRow: {
+                deleteText: "Tem certeza que deseja excluir esse registro?",
+                cancelTooltip: "Cancelar",
+                saveTooltip: "Confirmar",
+              },
             },
-          },
-          header: {
-            actions: "Ações",
-          },
-          toolbar: {
-            searchTooltip: "Pesquisar",
-            searchPlaceholder: "Pesquisar",
-          },
-        }}
-      />
+            header: {
+              actions: "Ações",
+            },
+            toolbar: {
+              searchTooltip: "Pesquisar",
+              searchPlaceholder: "Pesquisar",
+            },
+          }}
+        />
+      </div>
     </div>
   );
 }
