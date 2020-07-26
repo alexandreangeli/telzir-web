@@ -6,16 +6,17 @@
   outline: 0;
   box-sizing: border-box;
 
-  --c-1: #212639;
-  --c-2: #90caf9;
-  --c-3: white;
-  --c-4: #424242;
-  --c-5: #c74339;
+  --white: white;
+  --darkBlue: #090e21;
+  --lightBlue: #1d1d35;
+  --mediumBlue: #111328;
+  --lightRed: #eb1555;
+  --lightGreen: #48b37d;
 }
 
 body {
   font: 400 14px Roboto, sans-serif;
-  background: var(--c-1);
+  background: var(--darkBlue);
   -webkit-font-smoothing: available;
 }
 

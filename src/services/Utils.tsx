@@ -11,5 +11,5 @@ export function getPropertyName(propertyFunction: Function): string {
 }
 
 export function centsToReal(cents: number) {
-  return "R$" + (cents / 100).toFixed(2);
+  return "R$ " + (cents / 100).toFixed(2);
 }

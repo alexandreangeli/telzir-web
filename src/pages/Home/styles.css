@@ -11,25 +11,25 @@
 
 .MuiIcon-root,
 .MuiInputBase-root {
-  color: var(--c-2) !important;
+  color: var(--lightGreen) !important;
 }
 
 .MuiInput-input {
-  color: var(--c-3) !important;
+  color: var(--white) !important;
 }
 
 .MuiFormHelperText-root {
-  color: var(--c-2) !important;
+  color: var(--lightGreen) !important;
 }
 
 .Mui-error {
-  color: var(--c-5) !important;
+  color: var(--lightRed) !important;
 }
 
 .MuiTypography-root {
-  color: var(--c-3) !important;
+  color: var(--white) !important;
 }
 
 .MuiTableCell-root {
-  color: var(--c-3) !important;
+  color: var(--white) !important;
 }

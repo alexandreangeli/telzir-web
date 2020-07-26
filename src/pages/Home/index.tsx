@@ -7,7 +7,7 @@ import {
   addCallPriceAPI,
   updateCallPriceAPI,
   removeCallPriceAPI,
-} from "../../requests/callPrices";
+} from "../../requests/CallPrices";
 import "./styles.css";
 import { WindowSizeContext } from "../../contexts/WindowSizeContext";
 
@@ -112,11 +112,23 @@ export default function Home() {
 
   return (
     <div className="default-page home-page">
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <img
+          src={require("../../assets/logo-horizontal.png")}
+          style={{
+            margin: 20,
+            width: "300px",
+            height: undefined,
+            objectFit: "cover",
+          }}
+        ></img>
+      </div>
+
       <MaterialTable
         style={{
-          backgroundColor: "var(--c-4)",
-          color: "var(--c-3)",
-          border: "1px solid var(--c-3)",
+          backgroundColor: "var(--mediumBlue)",
+          color: "var(--white)",
+          border: "1px solid var(--white)",
         }}
         title={
           windowSizeContextValue.width >= 800
@@ -127,9 +139,9 @@ export default function Home() {
         data={callPrices}
         options={{
           headerStyle: {
-            backgroundColor: "var(--c-4)",
-            color: "var(--c-3)",
-            border: "1px solid var(--c-3)",
+            backgroundColor: "var(--mediumBlue)",
+            color: "var(--white)",
+            border: "1px solid var(--white)",
           },
           maxBodyHeight: "75vh",
           paging: false,

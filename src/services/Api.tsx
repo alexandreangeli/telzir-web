@@ -6,7 +6,9 @@ export const api = axios.create({
   // baseURL: "http://localhost:5000/",
 });
 
-export function setApiInterceptors(setLoadingContextValue: Function) {
+export function setApiInterceptors(
+  setLoadingContextValue: React.Dispatch<React.SetStateAction<boolean>>
+) {
   api.interceptors.request.use(
     (config) => {
       setLoadingContextValue(true);
