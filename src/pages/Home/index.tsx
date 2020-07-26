@@ -147,7 +147,6 @@ export default function Home() {
             headerStyle: {
               backgroundColor: "var(--mediumBlue)",
               color: "var(--white)",
-              border: "1px solid var(--white)",
             },
             maxBodyHeight: "60vh",
             paging: false,
