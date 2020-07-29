@@ -1,6 +1,6 @@
 Front-end WEB do projeto Telzir feito em React, para manipulação dos preços de ligações entre uma origem e um destino;<br />
 
-O site do projeto é a seção usada pelo "administrador" do sistema Telzir;<br />
+O site do projeto é por onde o "administrador" do sistema Telzir realiza alterações no banco de dados;<br />
 
 Ele contém uma tabela, onde o usuário pode configurar os preços por minutos da ligações, por origem e destino;
 
