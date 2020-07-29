@@ -113,7 +113,11 @@ export default function Home() {
   return (
     <div className="default-page home-page">
       <div
-        style={{ display: "flex", maxHeight: "20vh", justifyContent: "center" }}
+        style={{
+          display: "flex",
+          maxHeight: "20vh",
+          justifyContent: "center",
+        }}
       >
         <img
           alt="Telzir Logo"
@@ -123,6 +127,7 @@ export default function Home() {
             width: "300px",
             height: undefined,
             objectFit: "cover",
+            minHeight: 82,
           }}
         ></img>
       </div>
