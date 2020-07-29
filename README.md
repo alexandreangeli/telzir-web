@@ -23,3 +23,13 @@ Roda o site em modo de desenvolvimento na rota http://localhost:3000/;<br />
 ### `npm build`
 
 Cria e otimiza os arquivos utilizados para rodar o site em produção;<br />
+
+## Screenshots
+
+### `Desktop`
+
+[![telzir-web.jpg](https://i.postimg.cc/8PNvjtyH/telzir-web.jpg)](https://postimg.cc/t7vJctGZ)
+
+### `Mobile`
+
+[![telzir-web-mobile.jpg](https://i.postimg.cc/fWFFsSBD/telzir-web-mobile.jpg)](https://postimg.cc/Sj6V7sBv)
