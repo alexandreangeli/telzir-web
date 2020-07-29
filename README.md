@@ -1,4 +1,4 @@
-Front-end WEB do projeto Telzir feito em React, para manipulação dos preços de ligações entre uma origem e um destino;<br />
+Front-end WEB do projeto Telzir feito em React com Typescript, para manipulação dos preços de ligações entre uma origem e um destino;<br />
 
 O site do projeto é por onde o "administrador" do sistema Telzir realiza alterações no banco de dados;<br />
 
